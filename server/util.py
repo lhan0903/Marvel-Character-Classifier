@@ -49,6 +49,7 @@ def load_saved_artifacts():
             __model = joblib.load(f)
     print("loading saved artifacts...done")
 
+# ----------------------------------------
 # takes a base-64 string and uses numpy and cv2 functions to convert it into an openCV image
 def get_cv2_image_from_base64_string(b64str):
     # credit: stackoverflow.com
@@ -56,6 +57,8 @@ def get_cv2_image_from_base64_string(b64str):
     nparr = np.frombuffer(base64.b64decode(encoded_data), np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     return img
+
+# ----------------------------------------
 
 # edited the function with same name in model building
 def get_cropped_image(image_path):  
@@ -84,9 +87,12 @@ def get_cropped_image(image_path):
                 cropped_faces.append(roi_color)
 
     return cropped_faces        # return ALL faces detected, return empty array if no face detected
+# ----------------------------------------
 
 def class_number_to_name(class_num):
     return __class_name_to_number[class_num]
+
+# ----------------------------------------
 
 # returns the base-64 encoding of an image as a string
 def get_b64_test_image_for_scarlett():

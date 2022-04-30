@@ -2,10 +2,15 @@ from flask import Flask, request, jsonify
 
 app  = Flask(__name__)
 
-# runs a server on 5000 port and supports an API called hello which returns "hi"
-@app.route('/classify_image', methods = ['GET', 'POST'])
-def classify_image():
-    return "hi"
+# # runs a server on 5000 port and supports an API called hello which returns "hi"
+# @app.route('/classify_image', methods = ['GET', 'POST'])
+# def classify_image():
+#     return "hi"
+
+@app.route('/hello/<name>')
+def hello(name):
+    return "HI" + name
+
 
 if __name__ == "__main__":
     app.run(port=5000)
