@@ -1,3 +1,7 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 .card-wrapper {
     margin: 2% 0;
   }
@@ -57,4 +61,91 @@
 .container {
     padding-top: 50px;
     padding-bottom: 100px;
+    background-color: #EBECF0;
+}
+/* ================================= */
+
+.wrapper,
+.wrapper .img-area{
+  background: #EBECF0;
+  box-shadow: -3px -3px 7px #ffffff,
+               3px 3px 5px #ceced1;
+}
+
+.wrapper{
+  position: relative;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.wrapper .img-area{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area{
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.wrapper .name{
+  font-size: 23px;
+  font-weight: 500;
+  color: #31344b;
+  margin: 10px 0 5px 0;
+}
+
+.wrapper .about{
+  color: #44476a;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* ================================= */
+#submitBtn {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    color: #6D7587;
+    background-color: #EBECF0;
+
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) 
+}
+
+/* #submitBtn:hover{
+    opacity: 0.3;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+                6px 6px 10px #efefef;    
+} */
+
+#submitBtn span {
+    line-height: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: semibold;
 }

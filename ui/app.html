@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./app.css">
 </head>
 
-<body>
+<body style="background-color:#EBECF0;">
     <!-- navigation bar -->
     <nav class="navbar navbar-light bg-light justify-content-center">
         <a class="navbar-brand" href="#">Avenger Classifier</a>
@@ -19,19 +19,37 @@
     <div class="container">
         <!-- Row 1: three Avenger images -->
         <div class="row">
-            <div class="col card-wrapper" data-avenger="robert_downey_jr">
-                <div class="card border-0">
-                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                        <img class="w-100 h-100" src="./images/robert_downey_jr.jpeg" alt="Card image cap">
-                    </div>
-                    <div class="card-body text-center mt-4">
-                        <h4 class="text-uppercase card-title">Robert Downey Jr.</h4>
-                        </p>
+            <div class="wrapper" data-avenger="robert_downey_jr">
+                <div class="img-area">
+                    <div class="inner-area">
+                        <img src="./images/robert_downey_jr.jpeg" alt="Card image cap">
                     </div>
                 </div>
+                <div class="name">Robert Downey Jr.</div>
+                <div class="about">Iron Man</div>         
             </div>
 
-            <div class="col card-wrapper" data-avenger="chris_evans">
+            <div class="wrapper" data-avenger="robert_downey_jr">
+                <div class="img-area">
+                    <div class="inner-area">
+                        <img src="./images/robert_downey_jr.jpeg" alt="Card image cap">
+                    </div>
+                </div>
+                <div class="name">Robert Downey Jr.</div>
+                <div class="about">Iron Man</div>         
+            </div>
+
+            <div class="wrapper" data-avenger="robert_downey_jr">
+                <div class="img-area">
+                    <div class="inner-area">
+                        <img src="./images/robert_downey_jr.jpeg" alt="Card image cap">
+                    </div>
+                </div>
+                <div class="name">Robert Downey Jr.</div>
+                <div class="about">Iron Man</div>         
+            </div>
+            
+            <!-- <div class="col card-wrapper" data-avenger="chris_evans">
                     <div class="card border-0">
                         <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
                             <img class="w-100 h-100" src="./images/chris_evans.jpeg" alt="Card image cap">
@@ -52,12 +70,13 @@
                             </p>
                         </div>
                     </div>
-            </div>          
+            </div>           -->
+
         </div>
 
         <!-- Row 2: three Avenger images-->
         <div class = "row">
-            <div class="col card-wrapper" data-player="mark_ruffalo">
+            <div class="col card-wrapper" data-avenger="mark_ruffalo">
                 <div class="card border-0">
                     <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
                         <img class="w-100 h-100" src="./images/mark_ruffalo.jpeg" alt="Card image cap">
@@ -96,6 +115,7 @@
         </div>
 
         <!-- Row 3: dropzone & probability table -->
+        <h3>Make a prediction</h3>
         <div class="row">
             <div class="col-sm-4">
                 <div class="row">

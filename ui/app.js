@@ -82,8 +82,9 @@ function init() {
                 $("#error").hide();
                 $("#resultHolder").show();
                 $("#divClassTable").show();
-                $("#resultHolder").html($(`[data-player="${match.class}"`).html());
+                $("#resultHolder").html($(`[data-avenger="${match.class}"]`).html());
                 let classDictionary = match.class_dictionary;
+
                 for(let personName in classDictionary) {
                     let index = classDictionary[personName];
                     let proabilityScore = match.class_probability[index];
