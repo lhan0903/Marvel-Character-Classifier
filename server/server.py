@@ -1,10 +1,12 @@
-from flask import Flask, request, jsonify
+# 1. get access into the flask library
+from flask import Flask, request, jsonify 
 import util
 
-app  = Flask(__name__)
+# 2. turn server.py into a web application
+app  = Flask(__name__)                     
 
-# # runs a server on 5000 port and supports an API called hello which returns "hi"
-@app.route('/classify_image', methods = ['GET', 'POST'])
+# 3. listen for GET/POST requests on '/classify_image'
+@app.route('/classify_image', methods = ['GET', 'POST'])    
 def classify_image():
     image_data = request.form['image_data']
 
