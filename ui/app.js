@@ -64,8 +64,6 @@ function init() {
                 $("#error").show();
                 return;
             }
-            let avengers = ["robert_downey_jr", "chris_evans", "chris_hemsworth", 
-            "mark_ruffalo", "scarlett_johansson", "tom_holland"];
 
             let match = null;
             let bestScore = -1;

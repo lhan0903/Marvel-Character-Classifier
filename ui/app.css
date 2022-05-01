@@ -1,48 +1,28 @@
-*{
-    font-family: 'Poppins', sans-serif;
-}
-
-.card-wrapper {
-    margin: 2% 0;
-  }
-  
-/* You can adjust the image size by increasing/decreasing the width, height */
-.custom-circle-image {
-  width: 10vw; /* used vw not px for better responsive */
-  height: 10vw;
-}
-
-.custom-circle-image img {
-  object-fit: cover;
-}
-
-.card-title {
-  letter-spacing: 6px;
-}
-
-.card-text {
-  font-family: MerriweatherRegular;
-  font-size: 22px;
-  line-height: initial;
-}
-
 .dropzone {
-  border-style: dashed;
+  border-style: none;
+  background-color: #EBECF0;
+  box-shadow: inset -3px -3px 7px #ffffff,
+  inset 3px 3px 5px #ceced1;
 }
-
 
 .error {
   font-family: MerriweatherRegular;
   font-size: 30px;
   line-height: initial;
-  color: rgb(255, 109, 76);
   text-align: center;
+  color: transparent;
+  background: #000000;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
 
 #classTable {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+
 }
 
 #classTable td, #classTable th {
@@ -54,7 +34,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: #6D7587;
   color: white;
 }
 
@@ -68,6 +48,10 @@
     padding-top: 20px;
 }
 /* ================================= */
+#dropzone-wrapper{
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
 
 .wrapper,
 .wrapper .img-area{
@@ -86,6 +70,8 @@
   justify-content: center;
   flex-direction: column;
   margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
 }
 
 .wrapper .img-area{
@@ -109,20 +95,40 @@
 }
 .wrapper .name{
   font-size: 23px;
-  font-weight: 500;
-  color: #31344b;
+  font-weight: 600;
   margin: 10px 0 5px 0;
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
 
 .wrapper .about{
   color: #44476a;
   font-weight: 400;
   font-size: 16px;
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
-/* ================================= */
+
+.note {
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+/* =============== Submit Button ================== */
 #submitBtn {
-    width: 400px;
-    height: 100px;
+    /* width: 400px;
+    height: 100px; */
     position: relative;
     text-align: center;
     cursor: pointer;
@@ -133,23 +139,16 @@
     color: #6D7587;
     background-color: #EBECF0;
 
-    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
-    -7px -7px 20px rgba(255, 255, 255, 1),
-    inset 0px 0px 4px rgba(255, 255, 255, .2),
-    inset 7px 7px 15px rgba(55, 84, 170, 0),
-    inset -7px -7px 20px rgba(255, 255, 255, 0),
-    0px 0px 4px rgba(255, 255, 255, 0) 
+    box-shadow: 3px 3px 8px rgba(55, 84, 170, .15),
+                -3px -3px 8px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, .2),
+                inset 7px 7px 15px rgba(55, 84, 170, 0),
+                inset -7px -7px 20px rgba(255, 255, 255, 0),
+                0px 0px 4px rgba(255, 255, 255, 0) 
 }
 
-/* #submitBtn:hover{
-    opacity: 0.3;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-                6px 6px 10px #efefef;    
-} */
-
-#submitBtn span {
-    line-height: 100px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 32px;
-    font-weight: semibold;
+#submitBtn:hover{
+    background: #EBECF0;
+    box-shadow: inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
 }

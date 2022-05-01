@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avenger Classifier</title>
+    <title>The Avengers Classifier</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./dropzone.min.css">
     <link rel="stylesheet" href="./app.css">
 </head>
+<!-- Cards: https://dev.to/codingnepal/neumorphism-profile-card-ui-design-using-only-html-css-1clj-->
 
 <body style="background-color:#EBECF0;">
     <!-- navigation bar -->
     <nav class="navbar navbar-light bg-light justify-content-center">
-        <a class="navbar-brand" href="#">Avenger Classifier</a>
+        <a class="navbar-brand" href="#">The Avengers Classifier</a>
     </nav>
 
     <div class="container">
@@ -29,7 +30,7 @@
                 <div class="about">Iron Man</div>         
             </div>
 
-            <div class="wrapper" data-avenger="robert_downey_jr">
+            <div class="wrapper" data-avenger="chris_evans">
                 <div class="img-area">
                     <div class="inner-area">
                         <img src="./images/captain_america.png" alt="Card image cap">
@@ -39,7 +40,7 @@
                 <div class="about">Captain America</div>         
             </div>
 
-            <div class="wrapper" data-avenger="robert_downey_jr">
+            <div class="wrapper" data-avenger="chris_hemsworth">
                 <div class="img-area">
                     <div class="inner-area">
                         <img src="./images/thor.png" alt="Card image cap">
@@ -52,7 +53,7 @@
 
         <!-- Row 2: three Avenger images-->
         <div class="row">
-            <div class="wrapper" data-avenger="robert_downey_jr">
+            <div class="wrapper" data-avenger="mark_ruffalo">
                 <div class="img-area">
                     <div class="inner-area">
                         <img src="./images/hulk.png" alt="Card image cap">
@@ -62,7 +63,7 @@
                 <div class="about">Hulk</div>         
             </div>
 
-            <div class="wrapper" data-avenger="robert_downey_jr">
+            <div class="wrapper" data-avenger="scarlett_johansson">
                 <div class="img-area">
                     <div class="inner-area">
                         <img src="./images/black_widow.png" alt="Card image cap">
@@ -72,7 +73,7 @@
                 <div class="about">Black Widow</div>         
             </div>
 
-            <div class="wrapper" data-avenger="robert_downey_jr">
+            <div class="wrapper" data-avenger="tom_holland">
                 <div class="img-area">
                     <div class="inner-area">
                         <img src="./images/spider_man.png" alt="Card image cap">
@@ -84,28 +85,24 @@
         </div>
         
         <!-- Row 3: dropzone & probability table -->
-        <h3>Make a prediction</h3>
-        <div class="row">
+        <div class="row" style ="margin-top: 80px">
             <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-12 mx-auto">
-                        <form action="/file-upload" class="dropzone" id="dropzone">
-                            <div class="dz-message needsclick">
-                                <img src="./images/upload.png" width="50vw" height="50vw"><br>
-                                <span class="note needsclick">Drop files here or click to upload</span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-3 mx-auto">
-                        <button id="submitBtn" type="button" class="btn btn-success">Classify</button>
-                    </div>
+                <div class="wrapper" id="dropzone-wrapper">
+                    <form action="/file-upload" class="dropzone" id="dropzone">
+                        <div class="dz-message needsclick">
+                            <img src="./images/upload.png" width="60vw" height="60vw">
+                            <br>
+                            <br>
+                            <span class="note needsclick">Drop files here or click to upload</span>
+                        </div>
+                    </form>
+                    <button id="submitBtn" type="button" class="btn btn-success"
+                            style="margin-top:15px">Classify</button>        
                 </div>
             </div>
             
             <div class="col-sm-8 error" id="error" >
-                <p>Can't classify image. Classifier was not able to detect face and two eyes properly :(</p>    
+                <p>Aww Snap! The classifier was not able to detect face and two eyes :(</p>    
             </div>
 
             <div class="col-sm-4" id="resultHolder">
