@@ -1,3 +1,5 @@
+# FLASK SERVER 
+
 # 1. get access into the flask library
 from flask import Flask, request, jsonify 
 import util
