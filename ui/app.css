@@ -5,6 +5,18 @@
   inset 3px 3px 5px #ceced1;
 }
 
+.dropzone .dz-preview.dz-image-preview{
+  background:#EBECF0;
+}
+
+.dz-remove{
+  color: #666666;
+}
+
+.dz-remove:hover{
+  color:#333333;
+}
+/* ======================= */
 .error {
   font-family: MerriweatherRegular;
   font-size: 30px;
