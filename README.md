@@ -1,6 +1,12 @@
-# The Avengers Classifier
+# The Avengers Classifier - Machine Learning Project
 
-Uses the Haar Cascade algorithms on OpenCV to detect faces in images of Avengers 
+<img src = "https://www.teahub.io/photos/full/28-287385_avengers-wallpaper-for-laptop.jpg" size=100px>
+<i>Image Source: https://www.teahub.io/viewwp/ixbbbx_avengers-wallpaper-for-laptop/</i>
+
+<br>
+
+### This is a machine learning web application that recognizes the user input image as one of the 6 actors (see list below) in Marvel’s “The Avengers” series.
+
 -  Robert Downey Jr.
 -  Chris Evans
 -  Chris Hemsworth
@@ -8,8 +14,25 @@ Uses the Haar Cascade algorithms on OpenCV to detect faces in images of Avengers
 -  Scarlett Johansson
 -  Tom Holland
 
-1. Classification Model
-2. Backend:
-3. Frontend: 
-4. Deployment:
-http://ec2-3-14-28-44.us-east-2.compute.amazonaws.com/
+## Tools/Environments used
+
+- Jupyter Notebook
+- Python
+
+### Classification Model: 
+- OpenCV
+- PyWavelets
+- Scikit-learn
+
+### Backend:
+- Flask
+
+### Frontend: 
+- HTML, CSS, JavaScript
+- jQuery
+
+### Deployment: 
+- Amazon EC2
+
+
+## Project Webiste 
