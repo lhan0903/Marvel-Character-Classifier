@@ -37,5 +37,4 @@
 
 ## Project Webiste 
 <img src="https://github.com/lhan0903/Marvel-Character-Classifier/blob/main/images/demo1.png?raw=true">
-<img src="https://github.com/lhan0903/Marvel-Character-Classifier/blob/main/images/demo2.png?raw=true" width = 1000px>
 <img src="https://github.com/lhan0903/Marvel-Character-Classifier/blob/main/images/demo3.png?raw=true">
