@@ -1,6 +1,6 @@
 # The Avengers Classifier - Machine Learning Project
 
-<img src = "https://www.teahub.io/photos/full/28-287385_avengers-wallpaper-for-laptop.jpg" size=100px>
+<img src = "https://www.teahub.io/photos/full/28-287385_avengers-wallpaper-for-laptop.jpg">
 <i>Image Source: https://www.teahub.io/viewwp/ixbbbx_avengers-wallpaper-for-laptop/</i>
 
 <br>
@@ -36,3 +36,4 @@
 
 
 ## Project Webiste 
+<img src="https://github.com/lhan0903/Marvel-Character-Classifier/blob/main/images/demo3.png?raw=true">
